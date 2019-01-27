@@ -1,0 +1,75 @@
+body{
+    background: url(img/bg.jpg);
+    background-repeat: repeat;
+}
+
+
+.welcome{
+     color:white;
+   /* background-image: url(gate.jpeg);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:contain;
+     
+    width:960px;
+    margin: 0 auto;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content:start;
+    flex-flow: column;
+    text-align: center;
+
+   }
+   .welcome img{
+    width: 100%;
+    height:auto;
+   }
+   #my-page, .page{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display:none;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index:1000;
+    overflow: auto;
+   }
+
+   .enter{
+    /*background-image: url(enter.png);*/
+    /*background-repeat: no-repeat;*/
+    
+    width:15%;
+    cursor:pointer;
+    display:inline-block;
+    position:absolute;
+    left:40%;
+    top:60%;
+    
+    
+    }
+    .enter img{
+        height: auto;
+        width: 100%;
+    }
+    .header{
+      position:absolute;
+      z-index: 100;
+      top:10%;
+      left:5%;
+      /*background-color:rgba(134,173,155,0.5);*/
+      margin-top: 4.25rem;
+      color: #111;
+
+    
+    }
+    .exit {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
