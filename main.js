@@ -2,31 +2,31 @@
 // Get DOM Elements
 const homepage = document.querySelector('#home-page');
 const enter = document.querySelector('#enter');
-const exit = document.querySelector('.exit');
 const welcome = document.querySelector('#welcome');
+const conCard= document.querySelector('#contact');
+
 
 
 // Events
+
 enter.addEventListener('click', openMyPage);
-
-
+window.addEventListener('click', outsideClick);
 
 // Open
 function openMyPage() {
   homepage.style.display = 'block';
   welcome.style.display = 'none';
   navBtn.style.display='block';
+ 
 
 }
 
-
-
 // Close If Outside Click
-// function outsideClick(e) {
-//   if (e.target == modal) {
-//     modal.style.display = 'none';
-//   }
-// }
+function outsideClick(e) {
+  if (e.target == conCard) {
+    conCard.style.display = 'none';
+  }
+}
 
 //Js Menu hamburger
 const navBtn=document.querySelector(".nav-btn");
@@ -118,13 +118,11 @@ const SECONDHAND = document.querySelector("#second");
 
 
 	var date = new Date();
-console.log(date);
+
 
 let hr=date.getHours();
 let min=date.getMinutes();
 let sec=date.getSeconds();
-
-console.log("Hour:"+ hr + " Minute:" + min + " " + sec +"");
 
 let hrPosition=(hr*360/12)+(min*(360/60)/12);
 let minPosition=(min*360/60)+(sec*(360/60)/60);
