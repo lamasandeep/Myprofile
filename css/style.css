@@ -3,122 +3,66 @@ body{
     margin:0;
     padding:0;
 }
-
+ul li{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration:none;
+  display: block;
+}
 .welcome{
     color:white;
     width:100%;
-    height: 675%;
-    margin: 0 auto;
-    height: 675px;
     overflow: hidden;
-    display:flex;
-    position:fixed;
-    align-items: center;
-    justify-content:start;
-    flex-flow: column;
-    text-align: center;
+    position:fixed; 
     z-index:800;
-    display:block;
+    display:none;
     left:0;
-   
-
    }
-   .welcome img
-   {
+
+   .welcome img {
     width: 100%;
     height:675px;
    }
-
-    .welcome .header{
-      position:absolute;
-      z-index: 100;
-      margin:0;
-      padding:0;
-      color: #111;
-      transform: translate3d(, 80%, 0);
-      top:-20%;
-      text-align:center;
-
-      
-    }
-
 
     .welcome .enter{
     background-image: url(../img/enter.png);
     width:72px;
     height:34px;
     cursor:pointer;
-    display:inline-block;
     position:absolute;
-    /*left:40%;
-    top:60%;*/
      z-index:800;
      top:51.5%;
      left:42%;
-     transition:all 0.8s ease-in;
-      background-repeat: no-repeat;
-
-    
+    transition:all 0.8s ease-in; 
     }
-
-    
-    
-/*  .enter img{
-     width:7%;
-    height: 1.3%;
-     height: auto;
-     width: 100%;
-
-     transition:all 0.8s ease-in;
-     
-    }*/
-   /* .enter img:hover{
-    
-      transform:rotate(90deg) translate(22px, 25px);
-      
-    }*/
 
 .enter:hover{
-    
-      transform:rotate(90deg) translate(22px, 25px);
-     /* background-position: 100% 95%;*/
-
-    
-      
+      transform:rotate(90deg) translate(22px, 25px)   
     }
+
   
 .home-page{
     position:fixed;
     width:1080px;
     height:100vh;
     margin:0 auto;
-    /*background: url(../img/myroon.jpg);*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
     z-index: 100;
-    display:block;
     overflow:hidden;
     top:0;
     left:8%;
-    z-index:1;
-    
-    
-    
-    
- 
-   
+    z-index:1; 
    }
-  
-   .front-box img{
-    width:100%;
-           }
-
-
-
 /*image-slider*/
 
    .slide-box{
-    
+    position:relative;
     width:278px;
     margin:auto auto;
     height:158px;
@@ -127,39 +71,35 @@ body{
     position:relative;
    }
    
-   .slide-content{
-     margin:0;
-     padding:0;
-     width:100%;
-     height:158px;
-     overflow-x:hidden;
-   
-   }
+
    .slide{
      background-size:cover;
      background-position:center;
      background-repeat:no-repeat;
+     width:100%;
+     margin:0;
+     padding:0;
+     height:160px;
+     overflow-x:hidden;
      
-   
    }
    .slide1{
-  background-image:url(../img/ps.jpg); 
+  background-image:url(../img/ai.jpg); 
    
    }
    
    .slide2 {
-         background-image:url(../img/html5.jpg);
+         background-image:url(../img/ps.jpg);
        }
        
-       
-       .slide-content{
-          display:flex;
-          flex-direction:column;
-          justify-content:center;
-          align-items:center;
-          text-align:center;
-       
-       }
+    .slide3 {
+        background-image:url(../img/html.jpg);
+      }
+
+      .slide4 {
+        background-image:url(../img/js.jpg);
+      }
+  
        .slide-content span{
          color:#000;
        }
@@ -171,45 +111,83 @@ body{
         margin-top:-10px;
         width:0;
         height:0;
-        border-style:solid;
-        
-     
+        border-style:solid;  
      }
-     #left:hover, #right:hover {
-          transform:scale(1.5);
-          
-
-
-          }
-          #left:hover
-
-          {
-              box-shadow: 3px -2px 5px 1px rgba(0, 0, 0, .5);
-          }
-
-       #right:hover{
-          box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, .5);
-       }
-
-
-     #right{
+ #right{
        border-width:10px 0 10px 10px;
-       border-color:transparent transparent transparent #000;
+       border-color:transparent transparent transparent #fff;
        right:0;
        margin-right:10px;
      
      }
+     #right:hover{
+      border-width:12px 0 12px 12px;
+      border-color:transparent transparent transparent #999;
+      right:0;
+      margin-right:10px;
+    
+    }
+
+    #right:active {
+      border-width:10px 0 10px 10px;
+      border-color:transparent transparent transparent #999;
+      right:0;
+      margin-right:10px;
+    
+    }
+    
      #left{
        border-width:10px 10px 10px 0;
-       border-color:transparent #000 transparent transparent;
+       border-color:transparent #fff transparent transparent;
        left:0;
        margin-left:10px;
      }
-   
+     #left:hover{
+      border-width:12px 12px 12px 0;
+      border-color:transparent #999 transparent transparent;
+      left:0;
+      margin-left:10px;
+    }
+    #left:active{
+      border-width:10px 10px 10px 0;
+      border-color:transparent #999 transparent transparent;
+      left:0;
+      margin-left:10px;
+    }
+
+   #slider a.overlay{
+    display:inline-block;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    cursor:pointer;
+    height:50px;
+    background-color: #000;
+    color:#fff;
+    position:absolute;
+    top:29%;
+    left:40%;
+    padding:0 8px;
+    margin:0;
+    opacity:0.2;
+    border:solid 1px #fff;
+    border-radius: 2px;
+    text-align: center;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    }
+    #slider a.overlay p{
+      margin:0px;
+    }
+    #slider:hover a.overlay{
+      opacity:1;
+      transform:scale(1.3);
+    }
+
 
    /*Analog clock star from here */
 
-/* Layout */
+
 .main {
     display: flex;
     padding: 2em;
