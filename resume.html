@@ -3,57 +3,16 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>My Portfolio</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/vanilla-js-accordion.css">
 
-
+    <style>
+    </style>
 </head>
 
-<body>
-
-    <div id="welcome" class="welcome">
-        <img src="img/background.jpg">
-        <div id="enter" class="enter" onclick="document.getElementById('welcome').style.display='none'">
-            <!-- <img src="img/enter.png"> -->
-        </div>
-    </div>
-    <!--welcome end here-->
-
+<body style="background:black;">
     <main id="home-page" class="home-page">
-        <img src="img/myroon.jpg">
-
-        <section class="slide-box">
-
-
-            <ul id="slider">
-                <li class="slide slide1">
-                </li>
-
-                <li class="slide slide2">
-
-                </li>
-
-                <li class="slide slide3">
-                    <div class="slide-content">
-
-                    </div>
-                </li>
-
-                <li class="slide slide4">
-                    <div class="slide-content">
-
-                    </div>
-                </li>
-                <a href="mywork.html" class="overlay">
-                    <P>View My Gallery </p>
-                </a>
-            </ul>
-            <div id="right" class="arrow"></div>
-            <div id="left" class="arrow"></div>
-        </section>
-        <!--Slide box end here-->
-
-
         <header id="menu" class="menu">
             <div class="clockbox">
                 <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
@@ -88,22 +47,19 @@
 
             <nav class="nav">
                 <ul class="menu-nav">
-                    <li class="nav-item current">
+                    <li class="nav-item">
                         <a href="home.html" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item current">
                         <a href="resume.html" class="nav-link">Resume</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a href="mywork.html" class="nav-link">My Work</a>
                     </li>
                 </ul>
             </nav>
 
         </header>
-
-
-
 
         <!--Hire Contact Section-->
         <button class="hire" onclick="document.getElementById('contact').style.display='block'" style="width:auto;">Hire Me &uarr;</button>
@@ -131,10 +87,10 @@
     </main>
     <!--Main end here -->
 
-    <script src="main.js">
 
+    <script src="js/main.js"></script>
+    <script>
     </script>
-
 </body>
 
 </html>
