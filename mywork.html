@@ -5,14 +5,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Home</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/vanilla-js-accordion.css">
+  <link rel="stylesheet" type="text/css" href="css/gallery.css">
 
   <style>
   </style>
 </head>
 
 <body style="background:black;">
-  <main id="home-page" class="home-page">
+  <main id="home-page" class="home-page" style="overflow:auto;">
     <header id="menu" class="menu">
       <div class="clockbox">
         <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
@@ -64,8 +64,14 @@
     <section class="my-gallery">
       <button class="accordion">Illustrator</button>
       <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="overlay">
+          <div class="overlay-inner">
+            <button class="close">× Close</button>
+            <img>
+          </div>
+        </div>
+
+        <section class="gallery"></section>
       </div>
 
       <button class="accordion">Photoshop</button>
@@ -110,7 +116,9 @@
 
 
   <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
   <script>
+
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -125,12 +133,12 @@
         }
       });
     }
-
     var accordion = new Accordion({
       element: "accordion",    // ID of the accordion container
       openTab: 2,              // [optional] Accordion tab to start opened with. All tabs closed if not set.
       oneOpen: true            // [optional] Allow one accordion tab only to be opened at a time
     });
+
   </script>
 </body>
 
