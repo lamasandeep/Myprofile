@@ -1,10 +1,28 @@
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
+
+
+
+// Illustra Gallery
 const gallery = document.querySelector('.gallery');
 const overlay = document.querySelector('.overlay');
 const overlayImage = overlay.querySelector('img');
 const overlayClose = overlay.querySelector('.close');
 function generateHtml([h, v]) {
     return `<div class="item h${h} v${v}">
-              <img src="img/${randomNumber(12)}.jpg">
+              <img src="img/${randomNumber(10)}.jpg">
               <div class="item__overlay">
                 <button>View</button>
               </div>
@@ -14,34 +32,12 @@ function randomNumber(limit) {
     return Math.floor(Math.random() * limit) + 1;
 }
 const digits = Array.from({
-    length: 50
+    length: 10
 }, () => {
     return [randomNumber(4), randomNumber(4)];
 }).concat([
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
+
+
 ]);
 const html = digits.map(generateHtml).join('');
 gallery.innerHTML = html;
