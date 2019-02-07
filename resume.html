@@ -11,89 +11,196 @@
     </style>
 </head>
 
-<body style="background:black;">
-    <main id="home-page" class="home-page">
-        <header id="menu" class="menu">
-            <div class="clockbox">
-                <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
-                    <g id="face">
-                        <circle class="circle" cx="300" cy="300" r="253.9" />
-                        <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"
-                        />
-                        <circle class="mid-circle" cx="300" cy="300" r="16.2" />
-                    </g>
-                    <g id="hour">
-                        <path class="hour-arm" d="M300.5 298V142" />
-                        <circle class="sizing-box" cx="300" cy="300" r="253.9" />
-                    </g>
-                    <g id="minute">
-                        <path class="minute-arm" d="M300.5 298V67" />
-                        <circle class="sizing-box" cx="300" cy="300" r="253.9" />
-                    </g>
-                    <g id="second">
-                        <path class="second-arm" d="M300.5 350V55" />
-                        <circle class="sizing-box" cx="300" cy="300" r="253.9" />
-                    </g>
-                </svg>
-            </div>
-            <!-- .clockbox -->
+<body style="background:red;">
+    <header id="menu" class="menu">
 
-            <div class="nav-btn">
+        <div class="nav-btn">
+            <div class="lines">
                 <div class="btn-line first"></div>
                 <div class="btn-line"></div>
                 <div class="btn-line"></div>
-
             </div>
+            <span class="title">Menu</span>
+        </div>
 
-            <nav class="nav">
-                <ul class="menu-nav">
-                    <li class="nav-item">
-                        <a href="home.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item current">
-                        <a href="resume.html" class="nav-link">Resume</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="mywork.html" class="nav-link">My Work</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mywork.html" class="nav-link my-work">My Work</a>
+                </li>
+            </ul>
+        </nav>
 
-        </header>
+    </header>
+    <section class="resume">
+        <table id="t01">
+            <tr>
+                <th>
+                    <h1>ふりがな</h1>
+                </th>
+                <td>
+                    <h1>らま　サンディ―プ</h1>
+                </td>
+                <th rowspan="3" style="width:25%; padding:0; height:147px; ">
+                    <img src="img/photo.jpg ">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h1>氏名</h1>
+                </th>
+                <td>
+                    <h1>Lama Sandeep</h1>
+                </td>
 
-        <!--Hire Contact Section-->
-        <button class="hire" onclick="document.getElementById('contact').style.display='block'" style="width:auto;">Hire Me &uarr;</button>
-        <div class="card" id="contact">
-            <div class="card-container">
-                <div class="card-inner animate">
-                    <div class="card-front">
-                        <img src="img/card.png">
-                    </div>
-                    <div class="card-back">
-                        <span onclick="document.getElementById('contact').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        <h2>Sandeep Lama
-                            <br> web designer</h2>
+            </tr>
+            <tr>
+                <th>
+                    <h2>生年月日</h2>
+                    </td>
+                    <td>
+                        <h3>1988-11-12</h3>
+                    </td>
 
-                        <h3>Contact</h3>
+            </tr>
+            <tr>
+                <th>
+                    <h3>住所</h3>
+                </th>
+                <td>
+                    <h3>〒533-0007 大阪府大阪市東淀川区　3丁目　1番 18号　しんぐる 207号
+                    </h3>
+                </td>
+                <td>
+                    <h3>電話　080-1995-6939</h3>
+                </td>
+            </tr>
 
-                        <h3> lamasandeep5@gmail.com</h3>
-                        <h3>Call-:080-1995-6936
-                        </h3>
-                        <h3>
-                            <a href="https://www.facebook.com/Deepsun.Lama" class="social-media">f</a>
-                        </h3>
-                    </div>
+        </table>
+
+        <table id="t02 ">
+            <caption>
+                <h1>学歴　Education,　職暦 Employment</h1>
+            </caption>
+            <tr>
+                <th style="width:5%;">
+                    <h2>Yr/年</h2>
+                </th>
+                <th style="width:2%;">
+                    <h2>Mth/月</h2>
+                </th>
+                <th>
+                    <h2>詳細　Details</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <h3>2004</h3>
+                </td>
+                <td>
+                    <h3>6</h3>
+                </td>
+                <td>
+                    <h3>Blue Bird School ブルバード　中学校</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>2006</h3>
+                </td>
+                <td>
+                    <h3>8</h3>
+                </td>
+                <td>
+                    <h3>Bagmati Modern College　高校学校</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>2010</h3>
+                </td>
+                <td>
+                    <h3>9</h3>
+                </td>
+                <td>
+                    <h3>National College for computer studies　ネッスナル　カレッジ コンピュータ　コース　大学校
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>2011</h3>
+                </td>
+                <td>
+                    <h3>03</h3>
+                </td>
+                <td>
+                    <h3>Alpine Coffee State Pvt.Ltd</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>2016</h3>
+                </td>
+                <td>
+                    <h3>10</h3>
+                </td>
+                <td>
+                    <h3>専門学校　穴吹ビジネスカレッジ日本語学科</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>2018</h3>
+                </td>
+                <td>
+                    <h3>04</h3>
+                </td>
+                <td>
+                    <h3>日本　コンピュータ　専門学校</h3>
+                </td>
+            </tr>
+
+        </table>
+
+    </section>
+    <!--Hire Contact Section-->
+
+    <!--Hire Contact Section-->
+    <button class="hire" onclick="document.getElementById('contact').style.display='block'" style="width:auto;">Hire Me &uarr;</button>
+    <div class="card" id="contact">
+        <div class="card-container">
+            <div class="card-inner animate">
+                <div class="card-front">
+                    <img src="img/card.png">
+                </div>
+                <div class="card-back">
+                    <span onclick="document.getElementById('contact').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <h2>Sandeep Lama
+                        <br> web designer</h2>
+
+                    <h3>Contact</h3>
+
+                    <h3> lamasandeep5@gmail.com</h3>
+                    <h3>Call-:080-1995-6936
+                    </h3>
+                    <h3>
+                        <a href="https://www.facebook.com/Deepsun.Lama" class="social-media">f</a>
+                    </h3>
                 </div>
             </div>
         </div>
-        <!--Hire Contact Section-->
+    </div>
+    <!--Hire Contact Section-->
 
-    </main>
-    <!--Main end here -->
-
-
-    <script src="js/main.js"></script>
-    <script>
+    <script src="js/main.js "></script>
+    <script></script>
     </script>
 </body>
 

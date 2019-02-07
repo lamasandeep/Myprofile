@@ -2,6 +2,9 @@ body{
  margin:0;
  padding:0;
 }
+* {
+  box-sizing: border-box;
+}
 ul li{
   list-style-type:none;
   margin:0;
@@ -23,7 +26,7 @@ a{
     z-index:800;
     display:block;
     left:0;
-    display:none;
+    display:block;
    }
 
    .welcome img {
@@ -303,9 +306,10 @@ header{
 .nav-btn{
      
   position:absolute;
-  height:2.1875rem;
-  width:2.4375rem;
-  border:2px solid #fff;
+  height:2.3875rem;
+  width:5.5375rem;
+  border:2px solid #ff0000;
+  background-color: #FFA500;
   border-radius: 3px;
   top:1.5625rem;
   right:-0.7rem;
@@ -314,7 +318,16 @@ header{
   display:block;
   cursor:pointer;
   transition: all 0.5s ease-out;
+  text-align:center;
+  line-height: 1.9875rem;
       
+}
+.nav-btn .title{
+  float:right;
+  margin-right:5px;
+  font-family: sans-serif;
+  color:#003366;
+
 }
 
 .nav-btn:hover{
@@ -330,33 +343,37 @@ header{
    transform: translateY(0px); 
    box-shadow: none;
 }
+.menu .nav-btn .lines{
+  float:left;
+  margin-top:7px;
+}
 
-.menu .nav-btn .btn-line{
+.menu .nav-btn .lines .btn-line{
   width:28px;
-  height: 4px;
-  background-color: #fff;
+  height:3px;
+  background-color:#003366;
   margin-bottom: 5px;
   transition:all 0.5s ease-out;
-  margin-left: 5px;
+  margin-left:6px;
       }
 
-.btn-line.first{
-    margin-top:5px;
-    }
+
+
       
-.nav-btn.close .btn-line {
+.nav-btn.close .lines .btn-line {
    transform:rotate(180deg);
    }
   
- .nav-btn.close .btn-line:nth-child(1){
-    transform:rotate(45deg) translate(5px, 6px);  
-     }
+   .nav-btn.close .btn-line:nth-child(1){
+    transform:rotate(45deg) translate(5px, 8px);
+       }
+
 
   .nav-btn.close .btn-line:nth-child(2){
     opacity:0;
      }
   .nav-btn.close .btn-line:nth-child(3){
-    transform:rotate(-45deg) translate(7px, -7px);
+    transform:rotate(-45deg) translate(3px, -6px);
        }
 
   
@@ -379,7 +396,7 @@ header{
     display:grid;
     width:141px;
     height:166px;
-    background-image: radial-gradient(#e65000, #480048);
+    border:1px solid #FFA500;
     transition: all 0.5s;
     transform: translate3d(100%, 0, 0);
     z-index:7000;
@@ -393,9 +410,10 @@ header{
     transform: translate3d(100%, 0, 0);
     transition: all 0.5s;
     }
-   .current.display a.nav-link{
-    color:orangered;
-      }
+   /* .current.display a.nav-link{
+    color:#003366!important;
+    background-color:#FFA500;
+      } */
 
     .nav-item.display {
     transform: translate3d(0, 0, 0); }
@@ -412,25 +430,37 @@ header{
        font-family: Arial, Helvetica, sans-serif;
        text-align:center;
        line-height: 53px;
+       color:#FFA500;
+      
      }
-
-    .nav-link:link, .nav-link:active{
+     #menu .nav ul li a:not(.my-work){
+       border-bottom:1px solid 
+     }
+     .nav-item.current.display a.nav-link{
+      background:  #FFA500;
+      color:#141cc4!important;
+      width:141px;
+      height:53px;
+      margin-top:-4px;
+      box-shadow: -1px 1px 0px 3px rgba(0,0,0,0.4);
+     }
+    
+    .nav-link:link, .nav-link:active, .nav-link:visited{
       display:inline-block;
       font-size:1rem;
       font-weight:bold;
       text-transform:uppercase;
-      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FFA500 50%);
       background-size: 220%;
       transition: all 0.4s;
       width:141px;
       height:53px;
     }
 
-.nav-link:hover,.nav-link:active {
-  margin-top:-11px;
+.nav-link:hover, .nav-link:active {
+  margin-top:-8px;
+  color:#003366!important;
   background-position: 100%;
-  color: orange;
-  transform: translatey(0.7rem);
   box-shadow: -1px 1px 0px 3px rgba(0,0,0,0.4);
  }
 
@@ -578,9 +608,13 @@ h1,h2,h3,h4,h5{
 }
 h3 a.social-media{
    color: #fff;
+   text-align:center;
+   line-height: 40px;
    font-family: sans-serif;
-   height:20%;
-   width:10%;
+   font-weight: 100;
+   height:40px;
+   width:40px;
+   font-size:25px;
    background-color:#141cc4;
    border-radius: 50%;
 }
@@ -588,6 +622,33 @@ h3 a.social-media{
 
 /*hire me end here */
 
-     
+ /*Resume start from here */ 
+ .resume{
+   margin-top:150px;
+ }
+table{
+
+  width:75%;
+  margin:30px auto 0;
+}
+ table, th, td{
+  border:1px solid black;
+  border-collapse: collapse;
+}
+th, td{
+  padding:15px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+th img{
+  width:100%;
+  height:auto;
+}
+#t02 tbody tr td:first-child{
+  width:10%;
+}
+
+
+/*Resume end here */    
 
 

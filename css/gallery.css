@@ -1,6 +1,6 @@
-{
+* {
     box-sizing: border-box;
-}
+  }
 
 body {
     padding: 50px;
@@ -171,3 +171,44 @@ left:0;
     max-height:0;
     overflow:hidden;
   }
+  .panel ul{
+      display: -ms-flexbox; /* IE10 */
+      -ms-flex-wrap: wrap; /* IE10 */
+      display:flex;
+      flex-wrap:wrap;
+      padding:0 4px;
+      width:100%;
+      overflow:scroll;
+      background:orangered;
+      
+  }
+  .panel ul li.column{
+      flex:25%;
+      max-width:25%;
+      padding:0 4px;
+      
+  }
+  .column img{
+      margin-top:8px;
+      vertical-align:middle;
+  }
+  .column img:hover{
+    opacity: 0.7;
+
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width:800px){
+    .column{
+        -ms-flex:50%;
+        flex:50%;
+        max-width:50%;
+    }
+  }
+  @media screen and (max-width:600px){
+    .column{
+        -ms-flex:100%;
+        flex:100%;
+        max-width:100%;
+    }
+  }
+  
