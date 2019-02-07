@@ -108,6 +108,7 @@ p {
     left: 0;
     display: none;
     z-index: 2;
+    overflow:scroll;
 }
 
 .overlay.open {
@@ -120,7 +121,6 @@ p {
     background: white;
     width:90%;
     margin-top:15px;
-    overflow:auto;
     padding: 20px;
 }
 
