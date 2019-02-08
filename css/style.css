@@ -56,8 +56,6 @@ a{
 
   
 .home-page{
-
-    position:fixed;
     width:1080px;
     height:100vh;
     margin:0 auto;
@@ -74,7 +72,7 @@ a{
     width:278px;
     margin:auto auto;
     height:158px;
-    transform: translate3d(21.5%, -283%, 0);
+    transform: translate3d(20.5%, -282%, 0);
     background-color: #888;
     position:relative;
    }
@@ -204,7 +202,7 @@ a{
     color:#fff;
     position:absolute;
     top:38%;
-    left:20%;
+    left:24%;
     padding:0 8px;
     margin:0;
     opacity:0.4;
@@ -385,13 +383,13 @@ header{
   
   
    header#menu.menu nav.nav{
-    position:absolute;
+    position:fixed;
     top:4rem;
-    right:-6.3rem;
+    right:0;
     visibility:hidden;
     z-index:6000;
-    width:178px;
-    height:150px;
+    width:25%;
+    height:100%;
     opacity: 0.9;
       }
       #menu .nav .display{
@@ -399,12 +397,19 @@ header{
         z-index:7000;
          }
  ul.menu-nav{
-    display:grid;
-    width:141px;
-    height:166px;
+    width:25%px;
+    height:100%;
+    background:
     transition: all 0.5s;
+    background: rgba(0, 0, 0, 0.7);
     transform: translate3d(100%, 0, 0);
     z-index:7000;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    
+
    }
 
   .menu-nav.display {
@@ -427,9 +432,7 @@ header{
     #menu .nav ul li{
       margin:0;
       padding:0;
-      display:flex;
-      align-items: center;
-      justify-content:center;
+    
      }
 
       #menu .nav ul li a{
@@ -495,7 +498,7 @@ header{
 .hire{
   position:fixed;
   bottom:2%;
-  right:42%;
+  right:45%;
   z-index:200;
   padding:0px 5px;
   border-radius:7px;
