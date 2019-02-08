@@ -16,23 +16,12 @@ h5,
 h6 {
     margin: 0 0 5px 0;
 }
-h1.lg-heading,
-h2.lg-heading,
-h3.lg-heading{
-    font-size:6rem;
-}
-h1.sm-heading,
-h2.sm-heading,
-h3.sm-heading{
-    margin-bottom:2rem;
-    padding:0.2rem 1rem;
-    background:rgba(73, 73, 73,73, 0.5);
-}
-
 p {
     margin: 0 0 20px 0;
 }
+.menu h1{
 
+}
 .close {
     background: none;
     color: black;
@@ -143,21 +132,22 @@ p {
 /*mywork*/
 .my-work {
 position:absolute;
-top: 158px;
+top: 201px;
 left:0;
 
   }
   
   .accordion {
     background-color: #eee;
-    color: #444;
+    color: #000;
     cursor: pointer;
-    padding: 18px;
+    padding:2rem;
     width: 100%;
     border: none;
+    font-weight: bold;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 1.5rem;
     transition: 0.4s;
   }
   
@@ -167,9 +157,10 @@ left:0;
   
   .accordion:after {
     content: '\002B';
-    color: #777;
+    color: #000;
     font-weight: bold;
     float: right;
+    font-size:1.5rem;
     margin-left: 5px;
   }
   
