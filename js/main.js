@@ -1,18 +1,6 @@
 
 
-const openDoor = document.querySelector(".enter");
 
-openDoor.addEventListener('animationstart', function (event) {
-  console.log('Animation started', event);
-})
-
-openDoor.addEventListener('animationend', function (event) {
-  console.log('Animation ended', event);
-})
-
-openDoor.addEventListener('animationiteration', function (event) {
-  console.log('Animation iteration', event);
-})
 
 
 var modal = document.getElementById('contact');
