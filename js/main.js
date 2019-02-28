@@ -15,6 +15,7 @@ window.onclick = function (event) {
 const navBtn = document.querySelector(".nav-btn");
 const nav = document.querySelector(".nav");
 const menuNav = document.querySelector('.menu-nav');
+// const menuTitle = document.querySelector('#menu-title');
 const navItems = document.querySelectorAll('.nav-item');
 
 
@@ -27,6 +28,7 @@ function toggleNav() {
     navBtn.classList.add("close");
     nav.classList.add("display");
     menuNav.classList.add("display");
+    // menuTitle.classList.add("display");
     navItems.forEach(item => item.classList.add('display'));
     //Set Nav state
     displayNav = true;
@@ -34,12 +36,14 @@ function toggleNav() {
     navBtn.classList.remove("close");
     nav.classList.remove("display");
     menuNav.classList.remove("display");
+    menuTitle.classList.remove("display");
     navItems.forEach(item => item.classList.remove('display'));
     //Set Initial State Of Nav
     displayNav = false;
 
   }
 }
+
 
 
 

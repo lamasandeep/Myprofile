@@ -74,17 +74,17 @@ a{
     background-size: cover;
     width:23.18rem;
     margin:auto auto;
-    height:17.6rem;
-    top: 24%;
+    height:20rem;
+    top: 15%;
     left:40%;
     display:flex;
     flex-direction: column;
     justify-content:space-between;
    }
    .slide-box p{
+     font-family: Arial, Helvetica, sans-serif;
      display:block;
-     font-size:1.3rem;
-     padding-top:5px;
+     font-size:2.5rem;
      text-align:center;
      color:#fff;
      font-weight:bold;
@@ -187,7 +187,7 @@ a{
      .arrow{
        cursor:pointer;
        position:absolute;
-       top:50%;
+       top:42%;
         margin-top:-10px;
         width:0;
         height:0;
@@ -245,9 +245,9 @@ a{
     background-color: #000;
     color:#fff;
     position:absolute;
-    top:38%;
-    left:24%;
-    padding:0 8px;
+    top:34%;
+    left:25%;
+    padding:0 5px;
     margin:0;
     opacity:0.4;
     border:solid 1px #fff;
@@ -259,6 +259,7 @@ a{
     }
     #slider a.overlay p{
       margin:0px;
+      font-size:1.5rem;
     }
     #slider:hover a.overlay{
       opacity:1;
@@ -368,7 +369,7 @@ header{
   transform: translateY(-3px);
       
 }
-.nav-btn span.title{
+.nav-btn span.menu-title{
   float:right;
   margin-right:8px;
   line-height:2.9rem;
@@ -438,7 +439,6 @@ header{
     z-index:6000;
     width:30%;
     height:100%;
-    opacity: 0.9;
       }
       #menu .nav .display{
         visibility: visible;
@@ -448,7 +448,7 @@ header{
     width:100%;
     height:100%;
     transition: all 0.5s;
-    background: rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(#f5af19, #f12711 );
     transform: translate3d(100%, 0, 0);
     z-index:7000;
     display:flex;
@@ -486,6 +486,7 @@ header{
         border:1px solid #FFA500;
         text-transform:uppercase;
         font-size:1.5rem;
+        color:#000;
       }
      #menu .nav ul li a:link{
        font-family: Arial, Helvetica, sans-serif;
@@ -522,7 +523,7 @@ header{
        border-bottom:1px solid  #FFA500; 
      }
      .nav-item.current.display a.nav-link{
-      background:  #000;
+      background:#000!important;
       color:#fff!important;
       box-shadow:none!important;
       transform: translateY(0);
@@ -597,6 +598,7 @@ h1,h2,h3,h4,h5{
   left:44%;
   perspective:1000px;
   background: transparent;
+  perspective: 20rem;
 }
 .card-inner{
   position:relative;

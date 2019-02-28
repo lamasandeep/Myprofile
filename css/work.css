@@ -7,6 +7,13 @@ body {
     font-family: sans-serif;
     background: linear-gradient(to right, #F93D66, #6D47D9);
 }
+.work-banner{
+    width:300px;
+    margin:-42px auto 0 auto; 
+}
+.work-banner img{
+    width:100%;
+}
 
 h1,
 h2,
@@ -135,10 +142,11 @@ p {
 /*mywork*/
 .my-work {
 position:absolute;
-top: 201px;
+top: 219px;
 left:0;
 
   }
+ 
   .sticky {
     position: fixed;
     top: 0;
@@ -156,7 +164,7 @@ left:0;
     font-weight: bold;
     text-align: left;
     outline: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     transition: 0.4s;
   }
   
@@ -169,8 +177,8 @@ left:0;
     color: #000;
     font-weight: bold;
     float: right;
-    font-size:1.5rem;
-    margin-left: 5px;
+    font-size:2rem;
+    margin-left:20%;
   }
   
   .active:after {
