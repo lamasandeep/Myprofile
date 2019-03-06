@@ -55,8 +55,8 @@ a{
 
   
 .home-page{
-  position:fixed;
-    width:1080px;
+
+
     height:100vh;
     margin:0 auto;
     z-index: 100;
@@ -64,6 +64,11 @@ a{
     top:0;
     left:8%;
     z-index:1; 
+    height:768px;
+   }
+   .home-page img{
+     width:100%;
+     height:
    }
 /*image-slider*/
 
@@ -98,7 +103,7 @@ a{
     width:23.18rem;
     margin:auto auto;
     height:13.5rem;
-    top: 33%;
+    top: 35%;
     left:40%;
    }
    
@@ -693,6 +698,7 @@ h3 a.social-media{
 
  /*Resume start from here */ 
  .resume{
+   padding-bottom:10rem;
   
  }
  h1.resume-title{

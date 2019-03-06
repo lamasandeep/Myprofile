@@ -36,7 +36,7 @@ function toggleNav() {
     navBtn.classList.remove("close");
     nav.classList.remove("display");
     menuNav.classList.remove("display");
-    menuTitle.classList.remove("display");
+
     navItems.forEach(item => item.classList.remove('display'));
     //Set Initial State Of Nav
     displayNav = false;
